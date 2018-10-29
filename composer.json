@@ -1,0 +1,24 @@
+{
+  "name": "pronko/magento-2-pronko-consulting-theme",
+  "description": "Pronko Consulting theme for Magento 2",
+  "type": "magento2-theme",
+  "version": "0.0.1",
+  "require": {
+    "magento/theme-frontend-blank": "100.2.*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    }
+  ],
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ]
+  }
+}
