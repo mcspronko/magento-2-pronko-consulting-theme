@@ -1,7 +1,31 @@
-@navigation-level0-item__color: #fff;
+@color-primary: #2E539F;
+@color-secondary: #DD406F;
 
+@navigation-level0-item__color: #fff;
+@_nav-level0-item-color-active: #fff;
 @navigation-desktop-level0-item__color: #fff;
 @navigation-level0-item__active__color: #fff;
 @navigation-level0-item__active__border-color: #fff;
 @navigation-desktop-level0-item__active__border-color: #fff;
-@navigation__background: #2E539F;
+@navigation__background: @color-primary;
+@navigation-desktop__font-weight: 500;
+@navigation-desktop-level0-item__hover__color: @color-secondary;
+
+//  Fonts
+@font-family-name__base: 'Roboto';
+@font-family-name__regular: 'Montserrat';
+@font-family__base: @font-family-name__base, @font-family__sans-serif;
+@font-family__condensed: 'Roboto Condensed', 'Helvetica Condensed', 'Arial Narrow', Arial, sans-serif;
+@font-family__regular: 'Montserrat', 'Tahoma', 'Open sans', Arial, sans-serif;
+
+.navigation {
+  font-family: @font-family__regular;
+  .level0 {
+    &.active,
+    &.has-active {
+      > .level-top {
+        color: #fff;
+      }
+    }
+  }
+}
