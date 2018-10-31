@@ -1,14 +1,18 @@
 # The Pronko Consulting Theme for Magento 2
-Welcome to the Pronko Consulting theme repository. This repository contains a Magento 2 theme. 
+Welcome to the Pronko Consulting theme repository. This repository contains a custom Magento 2 theme. 
 
 Feel free to customize it for your own purposes.
 
 All development steps and changes are documented and discussed on my [YouTube Channel](https://www.youtube.com/maxpronko).
 
 # Tutorials
+This is a collection of videos with explanations on how to build the theme.
 
 Part 1: [Magento 2 Custom Theme: Logo, Navigation and Layout](https://www.youtube.com/watch?v=zdjSvVUYMJo)
+
 Part 2: [Magento 2 Custom Theme: Adding Montserrat and Roboto Fonts](https://youtu.be/dxpfw0cJ-P0)
+
+Part 3: [Magento 2 Custom Theme: Header Content](https://youtu.be/G6qNMIweVlM)
 
 # About
 The Pronko Consulting theme is created to show best practices on Magento 2 theme development. The theme is based on Magento 2 Blank theme.

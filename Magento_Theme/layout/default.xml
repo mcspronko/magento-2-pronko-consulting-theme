@@ -12,5 +12,21 @@
 
         <referenceBlock name="report.bugs" remove="true" />
         <referenceBlock name="top.search" remove="true" />
+
+        <!-- Current Changes -->
+        <referenceBlock name="my-account-link" remove="true" />
+        <referenceBlock name="catalog.compare.link" remove="true" />
+        <referenceBlock name="minicart" remove="true" />
+
+        <referenceBlock name="top.links">
+            <block class="Magento\Theme\Block\Html\Header" name="header.other" as="header.other" after="header">
+                <arguments>
+                    <argument name="show_part" xsi:type="string">other</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <move element="authorization-link" destination="header.other" before="-"/>
+        <move element="register-link" destination="header.other" after="my-account-link"/>
     </body>
 </page>

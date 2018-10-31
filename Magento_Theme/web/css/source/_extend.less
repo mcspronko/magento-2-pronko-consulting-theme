@@ -27,10 +27,6 @@
   //  Header
   //  ---------------------------------------------
 
-  .page-header {
-    margin-bottom: 20px;
-  }
-
   .logo {
     margin: 10px 0 0 0;
     position: absolute;
@@ -47,6 +43,29 @@
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 1px;
+  }
+
+  .header {
+    &.panel {
+      > .header.links {
+        > li {
+          &.welcome {
+            > span {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .page-header {
+    .panel.wrapper {
+      border-bottom: 1px solid @color-yellow-grey;
+      background: @color-yellow-grey;
+    }
+    .header.content {
+      padding: 30px 20px 55px;
+    }
   }
 
   .cms-index-index {
