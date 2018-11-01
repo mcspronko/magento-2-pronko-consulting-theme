@@ -14,6 +14,8 @@ Part 2: [Magento 2 Custom Theme: Adding Montserrat and Roboto Fonts](https://you
 
 Part 3: [Magento 2 Custom Theme: Header Content](https://youtu.be/G6qNMIweVlM)
 
+Part 4: [Magento 2 Custom Theme: Adding Google Fonts](https://youtu.be/64JTlq32uPw)
+
 # About
 The Pronko Consulting theme is created to show best practices on Magento 2 theme development. The theme is based on Magento 2 Blank theme.
 The repository is created and maintained by [Max Pronko](https://www.maxpronko.com/) and [Pronko Consulting Team](https://www.pronkoconsulting.com). Feel free to contribute. This is a great opportunity to learn custom theme development best practices.
