@@ -2,6 +2,8 @@
 @color-secondary: #DD406F;
 @color-yellow-grey: #F2F0E5;
 
+@active__color: @color-secondary;
+
 @header-panel__background-color: @color-yellow-grey;
 @navigation-level0-item__color: #fff;
 @_nav-level0-item-color-active: #fff;
@@ -10,8 +12,34 @@
 @navigation-level0-item__active__border-color: #fff;
 @navigation-desktop-level0-item__active__border-color: #fff;
 @navigation__background: @color-primary;
-@navigation-desktop__font-weight: 500;
+@navigation-desktop__font-weight: @font-weight__heavier;
 @navigation-desktop-level0-item__hover__color: @color-secondary;
+
+//
+//  Buttons
+//  ---------------------------------------------
+@button__font-family: @font-family__regular;
+@button-primary__background: @color-secondary;
+@button-primary__border: 1px solid darken(@color-secondary, 10%);
+
+@button-primary__hover__background: darken(@color-secondary, 10%);
+@button-primary__hover__border: 1px solid darken(@color-secondary, 15%);
+@button__font-weight: @font-weight__regular;
+
+//
+//  Links
+//  ---------------------------------------------
+@link__color: @color-primary;
+@link__text-decoration: none;
+
+@link__visited__color: @link__color;
+@link__visited__text-decoration: none;
+
+@link__hover__color: @color-secondary;
+@link__hover__text-decoration: underline;
+
+@link__active__color: @active__color;
+@link__active__text-decoration: underline;
 
 //  Fonts
 @font-family-name__base: 'Roboto';

@@ -1,0 +1,44 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+  //  Newsletter subscription
+  .block.newsletter {
+    .title {
+      display: block;
+    }
+
+    .content {
+      margin-bottom: 15px;
+    }
+  }
+
+  .social {
+
+    > .item {
+      display: inline-block;
+      margin-right: 5px !important;
+    }
+
+    .social-icon {
+      width: 28px;
+      height: 28px;
+      background-image: url(../images/social-icons.png);
+      display: inline-block;
+
+      &.twitter {
+        background-position: -56px 0;
+      }
+      &.facebook {
+        background-position: -28px 0;
+      }
+      &.linkedin {
+        background-position: -140px 0;
+      }
+      &.gplus {
+        background-position: -84px 0;
+      }
+    }
+  }
+}

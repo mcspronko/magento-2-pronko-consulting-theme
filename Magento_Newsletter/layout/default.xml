@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="form.subscribe">
+            <container name="social_footer_container" label="Social Footer Container" htmlTag="div" htmlClass="social-div" before="-"/>
+            <block class="Magento\Framework\View\Element\Template" name="footer.social.links" template="Magento_Newsletter::social.phtml" />
+        </referenceBlock>
+
+        <referenceBlock name="footer.social.links">
+            <block class="Magento\Framework\View\Element\Html\Links" name="footer_social_links_contact">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">social</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+
+        <referenceBlock name="footer_social_links_contact">
+            <block class="Magento\Framework\View\Element\Text\TextList\Link" name="footer.social.twitter">
+                <arguments>
+                    <argument name="li_params" xsi:type="array">
+                        <item name="class" xsi:type="string">item</item>
+                    </argument>
+                    <argument name="a_params" xsi:type="array">
+                        <item name="class" xsi:type="string">social-icon twitter</item>
+                        <item name="href" xsi:type="string">https://twitter.com/pronkoconsult</item>
+                    </argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Framework\View\Element\Text\TextList\Link" name="footer.social.facebook">
+                <arguments>
+                    <argument name="li_params" xsi:type="array">
+                        <item name="class" xsi:type="string">item</item>
+                    </argument>
+                    <argument name="a_params" xsi:type="array">
+                        <item name="class" xsi:type="string">social-icon facebook</item>
+                        <item name="href" xsi:type="string">https://www.facebook.com/pronkoconsulting</item>
+                    </argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Framework\View\Element\Text\TextList\Link" name="footer.social.linkedin">
+                <arguments>
+                    <argument name="li_params" xsi:type="array">
+                        <item name="class" xsi:type="string">item</item>
+                    </argument>
+                    <argument name="a_params" xsi:type="array">
+                        <item name="class" xsi:type="string">social-icon linkedin</item>
+                        <item name="href" xsi:type="string">https://www.linkedin.com/company/pronko-consulting/</item>
+                    </argument>
+                </arguments>
+            </block>
+
+            <block class="Magento\Framework\View\Element\Text\TextList\Link" name="footer.social.gplus">
+                <arguments>
+                    <argument name="li_params" xsi:type="array">
+                        <item name="class" xsi:type="string">item</item>
+                    </argument>
+                    <argument name="a_params" xsi:type="array">
+                        <item name="class" xsi:type="string">social-icon gplus</item>
+                        <item name="href" xsi:type="string">https://plus.google.com/101125054619577019046</item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

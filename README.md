@@ -18,6 +18,8 @@ Part 4: [Magento 2 Custom Theme: Adding Google Fonts](https://youtu.be/64JTlq32u
 
 Part 5: [Magento 2 Custom Theme: Footer Links](https://youtu.be/2cXsEcjMQGs)
 
+Part 6: [Magento 2 Custom Theme: Footer Content Styling](https://youtu.be/oGL33ISb1-I)
+
 # About
 The Pronko Consulting theme is created to show best practices on Magento 2 theme development. The theme is based on Magento 2 Blank theme.
 The repository is created and maintained by [Max Pronko](https://www.maxpronko.com/) and [Pronko Consulting Team](https://www.pronkoconsulting.com). Feel free to contribute. This is a great opportunity to learn custom theme development best practices.

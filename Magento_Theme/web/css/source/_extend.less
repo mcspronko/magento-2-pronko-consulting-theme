@@ -4,17 +4,66 @@
 
 & when (@media-common = true) {
 
-  .logo {
-    position: absolute;
-    margin: 10px 0 0 0;
-    left: ~"calc(50% - 80px)";
-    top: 3px;
-    z-index: 6;
+  .action.primary {
+    text-transform: uppercase;
+  }
 
-    .page-print & {
-      display: inline-block;
-      float: none;
+  .header.content {
+    .logo {
+      position: absolute;
+      margin: 10px 0 0 0;
+      left: ~"calc(50% - 80px)";
+      top: 3px;
+      z-index: 6;
+
+      .page-print & {
+        display: inline-block;
+        float: none;
+      }
     }
+  }
+
+  .page-footer {
+    background: @color-yellow-grey;
+  }
+  .footer {
+    &.content {
+      border-top: none;
+      margin-top: 0;
+      padding-bottom: 0;
+
+      .logo {
+        float: none;
+        position: relative;
+        top: 0;
+        margin: 0 0 10px 0;
+      }
+    }
+    &.links.address {
+      margin: 0;
+    }
+  }
+  .copyright {
+    text-align: center;
+    border-top: 1px solid #e6e2d5;
+    margin-top: 0 !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .cms-index-index {
+    .page-title-wrapper {
+      display: none;
+    }
+  }
+
+  .contact-item {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -23,15 +72,24 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+  .cms-index-index {
+    .page-main {
+      //max-width: none;
+    }
+  }
+
   //
   //  Header
   //  ---------------------------------------------
 
-  .logo {
-    margin: 10px 0 0 0;
-    position: absolute;
-    left: ~"calc(50% - 80px)";
-    top: 0;
+  .header.content {
+    .logo {
+      margin: 10px 0 0 0;
+      position: absolute;
+      left: ~"calc(50% - 80px)";
+      top: 0;
+    }
   }
 
   .navigation > ul {
@@ -67,12 +125,6 @@
       padding: 30px 20px 55px;
     }
   }
-
-  .cms-index-index {
-    .page-title-wrapper {
-      display: none;
-    }
-  }
 }
 
 //
@@ -80,8 +132,10 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
-  .logo {
-    margin-left: 20px;
-    width: 120px;
+  .header.content {
+    .logo {
+      margin-left: 20px;
+      width: 120px;
+    }
   }
 }
