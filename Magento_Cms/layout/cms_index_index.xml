@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.wrapper">
+            <container name="full-columns" htmlTag="div" htmlClass="full-columns" after="main.content" before="footer">
+                <container name="full-main" label="Custom Main Content Container" htmlTag="div" htmlClass="column main"/>
+            </container>
+        </referenceContainer>
+
+        <referenceContainer name="full-main">
+            <container name="newsletter" label="Newsletter Content Container" htmlTag="div" htmlClass="newsletter-block" />
+        </referenceContainer>
+    </body>
+</page>

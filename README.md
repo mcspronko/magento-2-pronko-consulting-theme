@@ -20,6 +20,21 @@ Part 5: [Magento 2 Custom Theme: Footer Links](https://youtu.be/2cXsEcjMQGs)
 
 Part 6: [Magento 2 Custom Theme: Footer Content Styling](https://youtu.be/oGL33ISb1-I)
 
+Part 7: [Magento 2 Custom Theme: Newsletter Block Section](https://www.youtube.com/watch?v=KkXmTnkRYks)
+
+The Newsletter Markup for CMS Block record.
+```html
+<div class="title"><h2 class="title">Subscribe for the Newsletter</h2></div>
+<div class="subtitle"><p>Be the first to hear about the latest extension releases, special sales and news.</p></div>
+    <form id="newsletter-subscription" class="form subscribe" action="" method="post" novalidate="">
+        <div class="field newsletter"><label class="label" for="newsletter"><span>Sign Up for Our Newsletter:</span></label>
+            <div class="control"><input id="newsletter" name="email" type="email" placeholder="Enter your email" /></div>
+        </div>
+        <div class="actions"><button class="action subscribe primary" title="Subscribe" type="submit"><span>Subscribe</span> </button></div>
+    </form>
+<div class="newsletter-illustration"><div class="img"></div></div>
+```
+
 # About
 The Pronko Consulting theme is created to show best practices on Magento 2 theme development. The theme is based on Magento 2 Blank theme.
 The repository is created and maintained by [Max Pronko](https://www.maxpronko.com/) and [Pronko Consulting Team](https://www.pronkoconsulting.com). Feel free to contribute. This is a great opportunity to learn custom theme development best practices.
@@ -37,5 +52,3 @@ modman clone git@github.com:mcspronko/magento-2-pronko-consulting-theme.git
 This command will clone the repository into the .modman/magento-2-pronko-consulting-theme directory and create a symlink in the app/code/design/Pronko folder.
 
 Any modifications in the app/code/design/Pronko directory will be reflected in the .modman/magento-2-pronko-consulting-theme.
-
-## Installation

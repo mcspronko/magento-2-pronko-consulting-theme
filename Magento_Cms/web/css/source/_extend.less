@@ -1,0 +1,118 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+  .cms-index-index {
+    .columns {
+      .column.main {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  //
+  //  Newsletter
+  //  ----------------------------------------
+  .newsletter-block {
+    border-bottom: 3px solid @color-primary;
+
+    .title {
+      font-family: @font-family__regular;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .label {
+      display: none;
+    }
+
+    .newsletter-illustration {
+      text-align: center;
+      max-width: 400px;
+      padding-top: 2em;
+      margin: 0 auto;
+
+      .img {
+        background-size: cover;
+        background-image: url(../images/newsletter.png);
+        width: 400px;
+        height: 182px;
+      }
+    }
+  }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  .newsletter-block {
+    padding-top: 20px;
+    padding-bottom: 0;
+    padding-left: @layout-indent__width;
+    padding-right: @layout-indent__width;
+
+    form {
+      display: table;
+      width: 100%;
+      justify-content: center;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .control {
+      input {
+        height: 40px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        flex-grow: 0;
+
+        border: 1px solid #BFBFBF;
+        box-shadow: 4px 4px 1px rgba(0,0,0,.1);
+        color: #333;
+        font-size: 20px;
+        padding: .5em 1em;
+        transition: all 0.1s;
+      }
+    }
+
+    .actions {
+      display: table-cell;
+      vertical-align: top;
+      width: 1%;
+
+      .primary.action {
+        font-size: 16px;
+        font-family: @font-family__regular;
+        height: 40px;
+        padding: .8em 1.3em;
+        font-weight: 400;
+        min-width: 12em;
+        letter-spacing: .1em;
+        box-shadow: 3px 3px 3px 0 rgba(0,0,0,.2);
+      }
+    }
+
+    .title, .subtitle {
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .newsletter-block {
+    padding-left: @layout__width-xs-indent;
+    padding-right: @layout__width-xs-indent;
+  }
+}
