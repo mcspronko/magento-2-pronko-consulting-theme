@@ -9,6 +9,7 @@
 
         <referenceContainer name="full-main">
             <container name="newsletter" label="Newsletter Content Container" htmlTag="div" htmlClass="newsletter-block" />
+            <container name="contact" label="Contact Content Container" htmlTag="div" htmlClass="contact-block" />
         </referenceContainer>
     </body>
 </page>
