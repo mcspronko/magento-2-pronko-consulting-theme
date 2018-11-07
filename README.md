@@ -22,6 +22,8 @@ Part 6: [Magento 2 Custom Theme: Footer Content Styling](https://youtu.be/oGL33I
 
 Part 7: [Magento 2 Custom Theme: Newsletter Block Section](https://www.youtube.com/watch?v=KkXmTnkRYks)
 
+Part 8: [How to speed up Magento 2 theme development by X times](https://www.youtube.com/watch?v=1SOeJN6PcJI)
+
 The Newsletter Markup for CMS Block record.
 ```html
 <div class="title"><h2 class="title">Subscribe for the Newsletter</h2></div>
