@@ -24,7 +24,7 @@ Part 7: [Magento 2 Custom Theme: Newsletter Block Section](https://www.youtube.c
 
 Part 8: [How to speed up Magento 2 theme development by X times](https://www.youtube.com/watch?v=1SOeJN6PcJI)
 
-The Newsletter Markup for CMS Block record.
+The Newsletter subscription HTML content for CMS Block.
 ```html
 <div class="title"><h2 class="title">Subscribe for the Newsletter</h2></div>
 <div class="subtitle"><p>Be the first to hear about the latest extension releases, special sales and news.</p></div>
@@ -36,6 +36,10 @@ The Newsletter Markup for CMS Block record.
     </form>
 <div class="newsletter-illustration"><div class="img"></div></div>
 ```
+
+Part 9: [Create Contact Us block on a Home Page](https://www.youtube.com/watch?v=hhUwc7tcGTE)
+
+The contact us HTML content for CMS Block.
 
 # About
 The Pronko Consulting theme is created to show best practices on Magento 2 theme development. The theme is based on Magento 2 Blank theme.
