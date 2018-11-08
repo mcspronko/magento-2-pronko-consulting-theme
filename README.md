@@ -40,6 +40,18 @@ The Newsletter subscription HTML content for CMS Block.
 Part 9: [Create Contact Us block on a Home Page](https://www.youtube.com/watch?v=hhUwc7tcGTE)
 
 The contact us HTML content for CMS Block.
+```html
+<div class="modular-row callout showcase-contact-us">
+    <div class="max-width">
+        <h2 class="title">DELIVERING BEST ECOMMERCE EXPERIENCE</h2>
+        <div class="subtitle"><p>As an eCommerce agency we offer everything from first-class development to a consulting that will bring any vision to life</p></div>
+        <div class="contact-us-container">
+            <div class="actions"><a class="action subscribe primary"><span>Contact Us</span></a></div>
+        </div>
+    </div>
+</div>
+```
+
 
 # About
 The Pronko Consulting theme is created to show best practices on Magento 2 theme development. The theme is based on Magento 2 Blank theme.
