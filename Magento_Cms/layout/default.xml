@@ -1,6 +1,10 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+        <referenceContainer name="page.wrapper">
+            <container name="page_top_after_nav" label="Page Top After Navigation Container" htmlTag="div" htmlClass="hero banner after-navigation" before="main.content"/>
+        </referenceContainer>
+
         <referenceBlock name="footer_links" remove="true" />
 
         <referenceContainer name="footer">
@@ -11,7 +15,7 @@
         <referenceContainer name="contacts_footer_container">
             <block class="Magento\Theme\Block\Html\Header\Logo" name="footer.logo">
                 <arguments>
-                    <argument name="logo_file" xsi:type="string">images/logo-footer.png</argument>
+                    <argument name="logo_file" xsi:type="string">images/logo-footer.svg</argument>
                     <argument name="logo_alt" xsi:type="string">Pronko Consulting</argument>
                     <argument name="logo_img_width" xsi:type="number">150</argument>
                     <argument name="logo_img_height" xsi:type="number">50</argument>

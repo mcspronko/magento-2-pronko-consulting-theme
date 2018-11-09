@@ -12,7 +12,7 @@
   }
 
   //
-  //  Newsletter
+  //  Newsletter block
   //  ----------------------------------------
   .newsletter-block {
     border-bottom: 3px solid @color-primary;
@@ -40,17 +40,21 @@
       }
     }
   }
-  
+
+  //
+  //  Contact us block
+  //  ----------------------------------------
   .contact-block {
     text-align: center;
     color: #fff;
     background-color: @color-primary;
-    padding: 40px;
+    padding: 50px 40px;
 
     .title {
       margin-top: 0;
       font-family: @font-family__regular;
       margin-bottom: 20px;
+      font-size: 2.6rem;
     }
 
     .subtitle {
@@ -65,6 +69,73 @@
       font-weight: 400;
       letter-spacing: .1em;
       min-width: 16em;
+    }
+  }
+
+  //
+  //  Showcase Hero Banner
+  //  ----------------------------------------
+  .after-navigation {
+    margin-top: -25px;
+  }
+  .hero.banner {
+    background: @color-primary;
+    padding: 40px;
+
+    background-image: url(../images/showcase-bg.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    position: relative;
+
+    border-top: 1px solid #82aad5;
+  }
+  .showcase-header {
+    margin: 0 auto;
+    text-align: center;
+
+    .title {
+      font-family: @font-family__regular;
+      text-transform: uppercase;
+      font-size: 45px;
+      max-width: 900px;
+      margin: 20px auto;
+      text-shadow: #233e77 2px 2px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: .11em;
+    }
+
+    .subtitle {
+      color: #fff;
+      font-size: 24px;
+      max-width: 650px;
+      margin: 30px auto;
+    }
+
+    .button-container .primary {
+      border: none;
+      box-shadow: none;
+      background: #fff;
+      min-width: 12em;
+      letter-spacing: .1em;
+      line-height: 1.2;
+      text-transform: uppercase;
+      font-family: @font-family__regular;
+      border-radius: 3px;
+      box-sizing: border-box;
+      display: inline-block;
+      color: @color-primary;
+      font-weight: 700;
+      padding: 15px 40px;
+      font-size: 18px;
+
+      &:hover {
+        background-color: @color-secondary;
+        color: #fff;
+      }
     }
   }
 }
@@ -125,11 +196,10 @@
     .title, .subtitle {
       text-align: center;
     }
-
-    .subtitle {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
+  }
+  .subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
   }
 }
 

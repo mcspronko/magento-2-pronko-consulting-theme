@@ -6,7 +6,7 @@
     <body>
         <referenceBlock name="logo">
             <arguments>
-                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_file" xsi:type="string">images/logo.svg</argument>
                 <argument name="logo_alt" xsi:type="string">Pronko Consulting</argument>
                 <argument name="logo_img_width" xsi:type="number">198</argument>
                 <argument name="logo_img_height" xsi:type="number">66</argument>
