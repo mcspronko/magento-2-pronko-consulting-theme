@@ -52,6 +52,16 @@ The contact us HTML content for CMS Block.
 </div>
 ```
 
+Part 10: [Showcase Banner on Home Page | Magento 2 Theme Development](https://youtu.be/FVRV_CXVaik)
+```html
+<div class="modular-row showcase-header">
+    <h1 class="title">Magento Ecommerce Solutions Provider</h1>
+    <div class="subtitle">We provide high-quality eCommerce solutions and consulting services globally</div>
+    <div class="button-container">
+        <div class="actions"><a class="action primary" href="{{config path="web/secure/base_url"}}services"><span>Our Services</span></a></div>
+    </div>
+</div>
+```
 
 # About
 The Pronko Consulting theme is created to show best practices on Magento 2 theme development. The theme is based on Magento 2 Blank theme.
