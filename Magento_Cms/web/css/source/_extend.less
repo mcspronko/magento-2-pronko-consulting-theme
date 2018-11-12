@@ -138,6 +138,47 @@
       }
     }
   }
+
+  //
+  // Services Header
+  // ---------------------------------------------
+  .services-page-header {
+    margin-top: -10px;
+    background: #003661;
+    position: relative;
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+
+    .title {
+      font-size: 50px;
+      text-align: center;
+      font-family: @font-family__regular;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      font-size: 2.2rem;
+      max-width: 650px;
+      margin: 0 auto 30px auto;
+    }
+
+    &:after {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      z-index: 1;
+      opacity: .15;
+      background-image: url(../images/showcase-bg.svg);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: 120%;
+    }
+  }
 }
 
 //
