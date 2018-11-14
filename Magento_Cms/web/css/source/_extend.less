@@ -254,3 +254,79 @@
     padding-right: @layout__width-xs-indent;
   }
 }
+
+//
+//  Common (Both desktop and mobile)
+//  _____________________________________________
+& when (@media-common = true) {
+
+  .block-title {
+    font-family: @font-family__regular;
+    text-transform: uppercase;
+  }
+
+  .sidebar-additional, .sidebar-main {
+    &:before {
+      font-size: 22px;
+    }
+  }
+}
+
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+  //.sidebar-additional, .sidebar-main {
+  //  background-color: #732380;
+  //  color: #fff;
+  //
+  //  &:before {
+  //    content: 'Mobile styles are applied';
+  //  }
+  //}
+  //.main {
+  //  background-color: #7782cd;
+  //  color: #fff;
+  //}
+}
+
+//
+//  Tablet
+// with MIN extremum and Medium screen break
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+  //.sidebar-additional, .sidebar-main {
+  //  background-color: #20803e;
+  //  color: #fff;
+  //
+  //  &:before {
+  //    content: 'Tablet styles are applied';
+  //  }
+  //}
+}
+
+//
+//  Desktop
+// with MIN extremum and Large screen break
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+
+  //.sidebar-additional, .sidebar-main {
+  //  background-color: #0a6680;
+  //
+  //  &:before {
+  //    content: 'Desktop styles are applied';
+  //  }
+  //}
+  //
+  //.main {
+  //  background-color: indianred;
+  //  color: #fff;
+  //}
+}
