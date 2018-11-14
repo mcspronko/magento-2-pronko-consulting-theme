@@ -1,3 +1,31 @@
+//
+// Custom Media Breakpoints
+// ----------------------------------------------
+@screen__xxl: 1600px;
+@screen__sm: 700px;
+
+//
+//  Style groups for 'desktop' devices
+//  ---------------------------------------------
+
+& when (@media-target = 'desktop'), (@media-target = 'all') {
+  @media all and (min-width: @screen__xxl),
+  print {
+    .media-width('min', @screen__xxl);
+  }
+}
+
+//
+//  Style groups for 'mobile' devices
+//  ---------------------------------------------
+
+& when (@media-target = 'mobile'), (@media-target = 'all') {
+  @media only screen and (max-width: (@screen__sm - 1)) {
+    .media-width('max', @screen__sm);
+  }
+}
+
+
 @color-primary: #2E539F;
 @color-secondary: #DD406F;
 @color-yellow-grey: #F2F0E5;

@@ -330,3 +330,27 @@
   //  color: #fff;
   //}
 }
+
+//
+// Custom Media Breakpoints
+// ----------------------------------------------
+
+//
+//  Desktop
+// with MIN of 1600px
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xxl) {
+  //body {
+  //  background: #ccc;
+  //}
+}
+
+//
+//  Mobile
+// with MAX of 700px
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'all') and (@break = @screen__sm) {
+  //body {
+  //  color: darkred;
+  //}
+}
