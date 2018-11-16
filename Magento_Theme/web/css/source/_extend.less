@@ -91,6 +91,34 @@
     text-transform: uppercase;
   }
 
+  .navigation {
+    .new {
+      background-color: #28b342;
+      color: #fff;
+      font-size: 11px;
+      position: absolute;
+      font-weight: 300;
+      top: -8px;
+      right: -5px;
+      padding: 5px 7px;
+      text-transform: uppercase;
+      border-radius: 2px 2px 2px 2px;
+      line-height: 10px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        right: 32px;
+        z-index: 2;
+        width: 0;
+        height: 0;
+        border-top: 7px solid #2dbc4b;
+        border-right: 7px solid transparent;
+      }
+    }
+  }
+
   .navigation .level0 > .level-top {
     font-size: 1.5rem;
     font-weight: 400;
