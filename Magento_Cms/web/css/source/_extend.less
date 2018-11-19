@@ -75,19 +75,12 @@
   //
   //  Showcase Hero Banner
   //  ----------------------------------------
-  .after-navigation {
-    margin-top: -25px;
-  }
   .hero.banner {
     background: @color-primary;
-    padding: 40px;
-
     background-image: url(../images/showcase-bg.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
-    padding-top: 50px;
-    padding-bottom: 120px;
     position: relative;
 
     border-top: 1px solid #82aad5;
@@ -99,13 +92,8 @@
     .title {
       font-family: @font-family__regular;
       text-transform: uppercase;
-      font-size: 45px;
-      max-width: 900px;
-      margin: 20px auto;
       text-shadow: #233e77 2px 2px;
-      font-weight: 700;
       color: #fff;
-      letter-spacing: .11em;
     }
 
     .subtitle {
@@ -179,6 +167,26 @@
       background-size: 120%;
     }
   }
+
+  //
+  // Testimonials Block
+  // ------------------------------------------------------
+  .testimonials {
+    background: #82aad5;
+    text-align: center;
+
+    .items {
+      margin: 0 auto;
+
+      .client {
+        text-transform: uppercase;
+        line-height: 2em;
+        display: block;
+        font-weight: 700;
+      }
+    }
+  }
+
 }
 
 //
@@ -186,6 +194,35 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  //
+  //  Showcase Hero Banner
+  //  ----------------------------------------
+  .after-navigation {
+    margin-top: -25px;
+  }
+
+  .hero.banner {
+    padding: 40px;
+    padding-top: 50px;
+    padding-bottom: 120px;
+    position: relative;
+
+
+    .showcase-header {
+      margin: 0 auto;
+      text-align: center;
+
+      .title {
+        font-size: 45px;
+        max-width: 900px;
+        margin: 20px auto;
+        font-weight: 700;
+        letter-spacing: .11em;
+      }
+    }
+  }
+
+
   .newsletter-block {
     padding-top: 20px;
     padding-bottom: 0;
@@ -241,6 +278,31 @@
   .subtitle {
     font-size: 1.8rem;
     margin-bottom: 20px;
+  }
+
+
+  //
+  // Testimonials Block
+  // ------------------------------------------------------
+  .testimonials {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .items {
+      max-width: 900px;
+
+      .client-feedback {
+        margin: 20px 0;
+        font-size: 18px;
+        line-height: 2em;
+      }
+      .client {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 2em;
+        font-weight: 700;
+      }
+    }
   }
 }
 
@@ -339,18 +401,18 @@
 //  Desktop
 // with MIN of 1600px
 //  _____________________________________________
-.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xxl) {
+//.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xxl) {
   //body {
   //  background: #ccc;
   //}
-}
+//}
 
 //
 //  Mobile
 // with MAX of 700px
 //  _____________________________________________
-.media-width(@extremum, @break) when (@extremum = 'all') and (@break = @screen__sm) {
+//.media-width(@extremum, @break) when (@extremum = 'all') and (@break = @screen__sm) {
   //body {
   //  color: darkred;
   //}
-}
+//}
