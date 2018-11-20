@@ -73,6 +73,7 @@ Part 14: [Custom Media Queries | Magento 2 Theme Development](https://youtu.be/3
 
 Part 15: [Top Menu Labels | Magento 2 Theme Development](https://www.youtube.com/watch?v=HSjEdr9lUso)
 
+Use this HTML to include into the navigation items:
 ```html
 <span class="new">New</span>
 ```
@@ -80,7 +81,7 @@ Part 15: [Top Menu Labels | Magento 2 Theme Development](https://www.youtube.com
 Part 16: [How to create Banner Widget in Magento 2](https://www.youtube.com/watch?v=LdiuVPXNcQQ)
  - [Pronko Banner Widget](https://github.com/mcspronko/banner-widget) repository
  
-Part 17: 
+Part 17: [How to add testimonials on Home Page | Magento 2 Theme Development](https://www.youtube.com/watch?v=oBpaTSxE5ik)
 
 # About
 The Pronko Consulting theme is created to show best practices on Magento 2 theme development. The theme is based on Magento 2 Blank theme.
