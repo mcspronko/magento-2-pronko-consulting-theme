@@ -29,7 +29,7 @@
 @color-primary: #2E539F;
 @color-secondary: #DD406F;
 @color-yellow-grey: #F2F0E5;
-
+@color-grey-1: #aaa;
 @active__color: @color-secondary;
 
 @header-panel__background-color: @color-yellow-grey;
@@ -44,15 +44,49 @@
 @navigation-desktop-level0-item__hover__color: @color-secondary;
 
 //
+//  Buttons variables
+//  _____________________________________________
+
+//
 //  Buttons
 //  ---------------------------------------------
+
+//  Font style
 @button__font-family: @font-family__regular;
+@button__font-weight: @font-weight__heavier;
+@button__padding: 7px 15px; // is set up to false when buttons don't depend on side paddings or have fixed width
+
+//  Primary button
 @button-primary__background: @color-secondary;
-@button-primary__border: 1px solid darken(@color-secondary, 10%);
+@button-primary__border: 1px solid @color-secondary;
+@button-primary__color: @color-white;
 
 @button-primary__hover__background: darken(@color-secondary, 10%);
 @button-primary__hover__border: 1px solid darken(@color-secondary, 15%);
-@button__font-weight: @font-weight__regular;
+
+@button-primary__active__background: @button-primary__hover__background;
+@button-primary__active__border: @button-primary__hover__border;
+@button-primary__active__color: @button-primary__color;
+
+//  Default = secondary button
+@button__color: @primary__color;
+@button__background: @color-white;
+@button__border: 1px solid @color-grey-1;
+
+@button__hover__color: @color-secondary;
+@button__hover__background: @color-white;
+@button__hover__border: 1px solid @color-secondary;
+
+@button__active__color: @button__color;
+@button__active__background: @button__hover__background;
+@button__active__border: @button__border;
+
+
+//  Large button
+@button__font-size__l: @font-size__l;
+@button__line-height__l: @font-size__l + 4;
+@button__padding__l: 15px 40px;
+
 
 //
 //  Links
@@ -85,5 +119,46 @@
         color: #fff;
       }
     }
+  }
+}
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+  .button-container {
+    margin-bottom: 20px;
+    .action, a.action.button {
+      margin-left: 5px;
+    }
+  }
+  //
+  // Buttons
+  // ---------------------------------------------
+  a.action, button {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-radius: 3px;
+  }
+
+  //
+  // Secondary button
+  // ---------------------------------------------
+  a.action.button {
+    .lib-link-as-button();
+    .lib-button();
+
+    background-color: @color-white;
+    border: 1px solid @color-grey-1;
+    color: @color-primary;
+    box-shadow: 3px 3px @color-gray80;
+  }
+
+  //
+  // Large button
+  // ---------------------------------------------
+  a.action.large {
+    .lib-button-l();
   }
 }
