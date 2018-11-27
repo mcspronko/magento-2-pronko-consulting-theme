@@ -8,6 +8,15 @@
         </referenceContainer>
 
         <referenceContainer name="full-main">
+            <container name="services" label="Services Content Container" htmlTag="div" htmlClass="services-container-block">
+                <block class="Magento\Framework\View\Element\Template" name="pronko.content.services" template="Magento_Cms::services.phtml" />
+            </container>
+            <container name="extensions" label="extensions Content Container" htmlTag="div" htmlClass="extensions-container-block">
+                <block class="Magento\Framework\View\Element\Template" name="pronko.content.extensions" template="Magento_Cms::extensions.phtml" />
+            </container>
+            <container name="blog" label="Blog Content Container" htmlTag="div" htmlClass="blog-container-block">
+                <block class="Magento\Framework\View\Element\Template" name="pronko.content.blog" template="Magento_Cms::blog.phtml" />
+            </container>
             <container name="newsletter" label="Newsletter Content Container" htmlTag="div" htmlClass="newsletter-block" />
             <container name="contact" label="Contact Content Container" htmlTag="div" htmlClass="contact-block" />
         </referenceContainer>

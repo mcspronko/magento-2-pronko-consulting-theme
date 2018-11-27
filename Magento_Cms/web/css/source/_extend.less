@@ -304,6 +304,57 @@
       }
     }
   }
+
+  .modular-row {
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 1200px;
+
+    .title {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+  }
+
+  //
+  // Services
+  // -----------------------------------------------
+  .modular-row {
+    .services {
+      display: flex;
+      flex-flow: row wrap;
+
+      .service {
+        width: 30%;
+        margin: 0 auto;
+        padding: 0 20px 30px 20px;
+
+        .image {
+          display: block;
+          margin: 0 auto 10px auto;
+          max-width: 240px;
+        }
+
+        .section-header {
+          font-family: @font-family__regular;
+          font-size: 20px;
+          font-weight: 400;
+          letter-spacing: .05em;
+          margin: 0 0 .5em 0;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .service-text {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 //
