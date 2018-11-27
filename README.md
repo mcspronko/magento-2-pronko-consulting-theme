@@ -83,6 +83,12 @@ Part 16: [How to create Banner Widget in Magento 2](https://www.youtube.com/watc
  
 Part 17: [How to add testimonials on Home Page | Magento 2 Theme Development](https://www.youtube.com/watch?v=oBpaTSxE5ik)
 
+Part 18: [How to add Owl Carousel jQuery plugin to Magento 2](https://www.youtube.com/watch?v=dW7Ec2nn_60)
+
+Part 19: [Services Container on Home Page | Magento 2 Theme Development](https://www.youtube.com/watch?v=bixkZPFYLng)
+
+Part 20: [Custom Buttons and Magento UI Library | Magento 2 Theme Development](https://www.youtube.com/watch?v=6PcS6QGbR0g)
+
 # About
 The Pronko Consulting theme is created to show best practices on Magento 2 theme development. The theme is based on Magento 2 Blank theme.
 The repository is created and maintained by [Max Pronko](https://www.maxpronko.com/) and [Pronko Consulting Team](https://www.pronkoconsulting.com). Feel free to contribute. This is a great opportunity to learn custom theme development best practices.
