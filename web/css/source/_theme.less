@@ -85,7 +85,7 @@
 //  Large button
 @button__font-size__l: @font-size__l;
 @button__line-height__l: @font-size__l + 4;
-@button__padding__l: 15px 40px;
+@button__padding__l: 10px 30px;
 
 
 //
@@ -128,7 +128,7 @@
 & when (@media-common = true) {
 
   .button-container {
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     .action, a.action.button {
       margin-left: 5px;
     }
@@ -154,7 +154,14 @@
     color: @color-primary;
     box-shadow: 3px 3px @color-gray80;
   }
+}
 
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
   //
   // Large button
   // ---------------------------------------------
