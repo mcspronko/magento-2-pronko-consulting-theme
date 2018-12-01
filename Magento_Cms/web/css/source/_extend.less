@@ -11,6 +11,18 @@
     }
   }
 
+  .button-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .modular-row {
+    .title {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
   //
   //  Newsletter block
   //  ----------------------------------------
@@ -35,8 +47,8 @@
       .img {
         background-size: cover;
         background-image: url(../images/newsletter.png);
-        width: 400px;
-        height: 182px;
+        width: 260px;
+        height: 120px;
       }
     }
   }
@@ -186,6 +198,44 @@
       }
     }
   }
+
+  //
+  // Magento 2 Extensions
+  // ----------------------------------------------------
+  .extensions-container-block {
+      background: #e6f1f9;
+  }
+
+  .modular-row {
+    .extensions {
+      .extension {
+        margin-bottom: 10px;
+
+        .extension-title {
+
+        }
+
+        .extension-wrapper {
+          background: #fff;
+          box-shadow: 4px 4px 1px rgba(0,0,0,.1);
+
+          .extension-container {
+
+            .ext-price {
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //
+  // Ecommerce Blog
+  // -------------------------------
+  .blog-container-block {
+    background: #F2F0E5;
+  }
 }
 
 //
@@ -221,12 +271,27 @@
     }
   }
 
-
+  //
+  // Newsletter
+  // --------------------------------------------
   .newsletter-block {
     padding-top: 20px;
     padding-bottom: 0;
     padding-left: @layout-indent__width;
     padding-right: @layout-indent__width;
+
+
+    .newsletter-illustration {
+      text-align: center;
+      max-width: 400px;
+      padding-top: 2em;
+      margin: 0 auto;
+
+      .img {
+        width: 400px;
+        height: 182px;
+      }
+    }
 
     form {
       display: table;
@@ -307,12 +372,7 @@
     padding: 40px;
     max-width: 1200px;
 
-    .title {
-      text-align: center;
-      text-transform: uppercase;
-    }
-
-    .button-container {
+    .title, .subtitle {
       text-align: center;
     }
   }
@@ -352,6 +412,96 @@
       }
     }
   }
+
+  //
+  // Magento 2 Extensions
+  // ----------------------------------------------------
+  .modular-row {
+    &.home-extensions .title {
+      margin-bottom: 35px;
+    }
+    .extensions {
+      display: flex;
+      flex-flow: row wrap;
+
+      margin-bottom: 30px;
+
+      .extension {
+        margin: 0 auto;
+        position: relative;
+        width: 23%;
+
+        .extension-title {
+          margin: 10px 10px 0 10px;
+        }
+
+        .extension-wrapper {
+
+          .extension-container {
+            padding: 0 10px;
+            margin: 0;
+            min-height: 63px;
+
+            .ext-price {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //
+  // Ecommerce Blog
+  // ---------------------------------
+  .modular-row {
+    .blog-container {
+      display: flex;
+      flex-flow: row wrap;
+
+      .post {
+        margin: 0 auto;
+        position: relative;
+        width: 32%;
+
+        .post-container {
+          padding: 10px;
+
+
+          .image-container {
+            .lib-css(height, 200px);
+            .lib-css(background, #ded9c9);
+            .lib-css(width, 100%);
+            .lib-css(border-radius, 10px);
+
+            .post-category {
+              width: 100%;
+              .lib-css(text-align, right);
+
+              .post-label {
+                position: relative;
+                color: @color-white;
+                top: 20px;
+                letter-spacing: .1em;
+
+                .lib-css(padding, 5px 10px);
+                .lib-css(background,#284a99);
+                .lib-css(display, inline-block);
+                .lib-css(border-top-left-radius, 5px);
+                .lib-css(border-bottom-left-radius, 5px);
+              }
+            }
+          }
+
+          .date-container {
+            font-size: @font-size__s;
+            text-align: right;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //
@@ -363,104 +513,16 @@
     padding-left: @layout__width-xs-indent;
     padding-right: @layout__width-xs-indent;
   }
-}
 
-//
-//  Common (Both desktop and mobile)
-//  _____________________________________________
-& when (@media-common = true) {
+  //
+  // Magento 2 Extensions
+  // ----------------------------------------------------
 
-  .block-title {
-    font-family: @font-family__regular;
-    text-transform: uppercase;
-  }
-
-  .sidebar-additional, .sidebar-main {
-    &:before {
-      font-size: 22px;
+  .modular-row {
+    .extensions {
+      padding: 10px;
     }
   }
 }
 
 
-//
-//  Mobile
-//  _____________________________________________
-
-.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
-
-  //.sidebar-additional, .sidebar-main {
-  //  background-color: #732380;
-  //  color: #fff;
-  //
-  //  &:before {
-  //    content: 'Mobile styles are applied';
-  //  }
-  //}
-  //.main {
-  //  background-color: #7782cd;
-  //  color: #fff;
-  //}
-}
-
-//
-//  Tablet
-// with MIN extremum and Medium screen break
-//  _____________________________________________
-
-.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-
-  //.sidebar-additional, .sidebar-main {
-  //  background-color: #20803e;
-  //  color: #fff;
-  //
-  //  &:before {
-  //    content: 'Tablet styles are applied';
-  //  }
-  //}
-}
-
-//
-//  Desktop
-// with MIN extremum and Large screen break
-//  _____________________________________________
-
-.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
-
-  //.sidebar-additional, .sidebar-main {
-  //  background-color: #0a6680;
-  //
-  //  &:before {
-  //    content: 'Desktop styles are applied';
-  //  }
-  //}
-  //
-  //.main {
-  //  background-color: indianred;
-  //  color: #fff;
-  //}
-}
-
-//
-// Custom Media Breakpoints
-// ----------------------------------------------
-
-//
-//  Desktop
-// with MIN of 1600px
-//  _____________________________________________
-//.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xxl) {
-  //body {
-  //  background: #ccc;
-  //}
-//}
-
-//
-//  Mobile
-// with MAX of 700px
-//  _____________________________________________
-//.media-width(@extremum, @break) when (@extremum = 'all') and (@break = @screen__sm) {
-  //body {
-  //  color: darkred;
-  //}
-//}
